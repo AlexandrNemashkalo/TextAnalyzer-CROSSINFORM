@@ -44,9 +44,8 @@ namespace Test
             
             list.Sort((pair1, pair2) => (-1)*pair1.Value.CompareTo(pair2.Value));
             
-            return list.GetRange(0,list.Count < numberFirstPairs ?  list.Count :  numberFirstPairs);
+            return list.GetRange(0, list.Count < numberFirstPairs ? list.Count : numberFirstPairs);
         }
-        
 
         private static void FindAndAddOccurrencesTripletsFromLine(
             ConcurrentDictionary<string, int> allOccurrencesTriplets,
